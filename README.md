@@ -39,3 +39,7 @@ ORDER BY name;
 в задании 6 использовал постгре индекс на два столбца - name и gender,
 метод поменялся на Parallel Index Only Scan и cost = 15661, время получилось 220мс,
 то есть оптимизация получилась.
+
+![изображение](https://github.com/yaroslaw-shchurikhin/PTMK-Task/assets/78354319/4c9a9ea0-1313-4738-ac4c-129b0c573fdd)
+![изображение](https://github.com/yaroslaw-shchurikhin/PTMK-Task/assets/78354319/eeed1664-bea4-4b0b-97d0-74c10f3f9d92)
+
