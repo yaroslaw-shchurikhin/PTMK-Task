@@ -21,7 +21,9 @@ SELECT DISTINCT ON (name, gender)
   dateofbirth,
   gender,
   DATE_PART('year', age(CURRENT_DATE, dateofbirth)) AS age
+  
 FROM public.users
+
 ORDER BY name;
 
 Но тогда бы мне пришлось пользоваться не анонимным типом, а классом UserInfo, где было бы поле Age,
