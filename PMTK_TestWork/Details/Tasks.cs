@@ -121,7 +121,7 @@ namespace PMTK_TestWork.Details
         /// </summary>
         public static void Task5()
         {
-            using (ApplicationContext db = new ApplicationContext()) // Замените на ваш контекст базы данных
+            using (ApplicationContext db = new ApplicationContext())
             {
                 FormattableString query = $@"
                 SELECT 
@@ -153,8 +153,8 @@ namespace PMTK_TestWork.Details
         /// </summary>
         public static void Task6()
         {
-            // Создадим индекс по полям male и name для оптимизации запроса
-            using (ApplicationContext db = new ApplicationContext()) // Замените на ваш контекст базы данных
+            // Создадим индекс по полям gender и name для оптимизации запроса
+            using (ApplicationContext db = new ApplicationContext())
             {
                 FormattableString createIndexSql = $@"CREATE INDEX idx_name_gender ON public.users (name, gender)";
                 db.Database.ExecuteSql(createIndexSql);
